@@ -1,0 +1,105 @@
+:root {
+  --ink: #1b2a27;
+  --forest: #17624f;
+  --forest-dark: #0f4a3b;
+  --header-bg: #123c35;
+  --page-bg: #eef3f1;
+  --amber: #e0a030;
+}
+
+body {
+  background-color: var(--page-bg);
+  color: var(--ink);
+}
+
+.page-header {
+  background-color: var(--header-bg);
+  color: #fff;
+  border-bottom: 4px solid var(--amber);
+}
+
+.page-header p {
+  color: #b9d3cb;
+}
+
+.panel {
+  border: 1px solid #d3dfda;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.btn-primary {
+  background-color: var(--forest);
+  border-color: var(--forest);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--forest-dark);
+  border-color: var(--forest-dark);
+}
+
+.btn-outline-dark {
+  color: var(--header-bg);
+  border-color: var(--header-bg);
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--header-bg);
+  border-color: var(--header-bg);
+}
+
+.form-control:focus {
+  border-color: var(--forest);
+  box-shadow: 0 0 0 0.2rem rgba(23, 98, 79, 0.2);
+}
+
+#errorBox {
+  min-height: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.stats-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.75rem;
+  background-color: #e1eee9;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.student-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e6eeea;
+}
+
+.student-row:last-child {
+  border-bottom: none;
+}
+
+.student-row.at-risk {
+  padding-inline-start: 0.6rem;
+  border-inline-start: 3px solid var(--amber);
+}
+
+.student-name {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.report-names {
+  padding-inline-start: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.report-average {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--forest);
+}
